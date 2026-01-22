@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pappa Ji ka Dosa - Authentic South Indian Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Pappa Ji ka Dosa</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="#order" class="btn btn-primary">Order Online</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="welcome-text">Welcome to</span>
+                <span class="restaurant-name">Pappa Ji ka Dosa</span>
+            </h1>
+            <p class="hero-subtitle">Authentic South Indian and Chinese Cuisine Since 2026</p>
+            <p class="hero-tagline">Where Every Dosa Tells a Story of Tradition & Love</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary btn-large">
+                    <i class="fas fa-utensils"></i> View Menu
+                </a>
+                <a href="#reservation" class="btn btn-secondary btn-large">
+                    <i class="fas fa-calendar-check"></i> Book Table
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">1+</span>
+                    <span class="stat-label">Years of Service</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Dosa Varieties</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">About Pappa Ji ka Dosa</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="placeholder-image">
+                            <i class="fas fa-utensils"></i>
+                            <span>Our Kitchen</span>
+                        </div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="years">1</span>
+                        <span class="text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>A Legacy of Authentic Flavors</h3>
+                    <p>Founded in 1995 by <strong>Pappa Ji himself</strong>, our restaurant began as a small roadside stall serving crispy, golden dosas to early morning commuters. Today, we've grown into a beloved destination for South Indian cuisine lovers.</p>
+                    <p>Our secret? We still use <strong>Pappa Ji's original recipes</strong> passed down through generations. Every dosa is made with love, fermented naturally for 24 hours, and cooked on traditional cast-iron griddles.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Vegetarian</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <span>Fresh Preparation</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-seedling"></i>
+                            <span>Organic Ingredients</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Menu</span>
+                <h2 class="section-title">Delicious Offerings</h2>
+                <p class="section-subtitle">Discover the authentic taste of South India</p>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="dosa">Dosas</button>
+                <button class="category-btn" data-category="idli">Idli & Vada</button>
+                <button class="category-btn" data-category="uttapam">Uttapam</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="menu-grid">
+                <!-- Dosa Items -->
+                <div class="menu-item" data-category="dosa">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🥞</div>
+                        <span class="item-tag bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Plain Dosa</h4>
+                            <span class="price">₹60</span>
+                        </div>
+                        <p>Crispy, golden dosa served with coconut chutney and sambar</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Plain Dosa" data-price="60">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dosa">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🥔</div>
+                        <span class="item-tag bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Masala Dosa</h4>
+                            <span class="price">₹80</span>
+                        </div>
+                        <p>Crispy dosa stuffed with spiced potato filling</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Masala Dosa" data-price="80">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dosa">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🧀</div>
+                        <span class="item-tag new">New</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Cheese Dosa</h4>
+                            <span class="price">₹100</span>
+                        </div>
+                        <p>Loaded with melted cheese and herbs</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Cheese Dosa" data-price="100">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dosa">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🌶️</div>
+                        <span class="item-tag spicy">Spicy</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Mysore Masala Dosa</h4>
+                            <span class="price">₹90</span>
+                        </div>
+                        <p>Spicy red chutney coated dosa with potato filling</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Mysore Masala Dosa" data-price="90">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dosa">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🧅</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Onion Dosa</h4>
+                            <span class="price">₹70</span>
+                        </div>
+                        <p>Crispy dosa topped with caramelized onions</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Onion Dosa" data-price="70">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dosa">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🫓</div>
+                        <span class="item-tag chef">Chef's Special</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Pappa Ji Special Dosa</h4>
+                            <span class="price">₹150</span>
+                        </div>
+                        <p>Our signature dosa with secret spices and premium toppings</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Pappa Ji Special Dosa" data-price="150">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dosa">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">📏</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Paper Dosa</h4>
+                            <span class="price">₹70</span>
+                        </div>
+                        <p>Extra thin and extra crispy, 2 feet long!</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Paper Dosa" data-price="70">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="dosa">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🌿</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Rava Dosa</h4>
+                            <span class="price">₹75</span>
+                        </div>
+                        <p>Crispy semolina dosa with onions and herbs</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Rava Dosa" data-price="75">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Idli & Vada Items -->
+                <div class="menu-item" data-category="idli">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">⚪</div>
+                        <span class="item-tag bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Idli (2 pcs)</h4>
+                            <span class="price">₹40</span>
+                        </div>
+                        <p>Soft, fluffy steamed rice cakes</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Idli (2 pcs)" data-price="40">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="idli">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🟤</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Medu Vada (2 pcs)</h4>
+                            <span class="price">₹50</span>
+                        </div>
+                        <p>Crispy lentil donuts, golden and crunchy</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Medu Vada (2 pcs)" data-price="50">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="idli">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🍛</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Idli Sambar</h4>
+                            <span class="price">₹60</span>
+                        </div>
+                        <p>Idlis dipped in hot, spicy sambar</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Idli Sambar" data-price="60">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="idli">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🔥</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Sambar Vada</h4>
+                            <span class="price">₹70</span>
+                        </div>
+                        <p>Vadas soaked in flavorful sambar</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Sambar Vada" data-price="70">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uttapam Items -->
+                <div class="menu-item" data-category="uttapam">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🫓</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Plain Uttapam</h4>
+                            <span class="price">₹60</span>
+                        </div>
+                        <p>Thick, soft pancake made from fermented batter</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Plain Uttapam" data-price="60">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="uttapam">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🧅</div>
+                        <span class="item-tag bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Onion Uttapam</h4>
+                            <span class="price">₹70</span>
+                        </div>
+                        <p>Topped with fresh onions and green chilies</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Onion Uttapam" data-price="70">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="uttapam">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🍅</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Mixed Uttapam</h4>
+                            <span class="price">₹80</span>
+                        </div>
+                        <p>Loaded with onions, tomatoes, and capsicum</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Mixed Uttapam" data-price="80">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">☕</div>
+                        <span class="item-tag bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Filter Coffee</h4>
+                            <span class="price">₹30</span>
+                        </div>
+                        <p>Traditional South Indian filter coffee</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Filter Coffee" data-price="30">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🥛</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Masala Chaas</h4>
+                            <span class="price">₹35</span>
+                        </div>
+                        <p>Spiced buttermilk, perfect digestive</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Masala Chaas" data-price="35">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="beverages">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🥭</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Mango Lassi</h4>
+                            <span class="price">₹50</span>
+                        </div>
+                        <p>Creamy mango yogurt drink</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Mango Lassi" data-price="50">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🍨</div>
+                        <span class="item-tag bestseller">Bestseller</span>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Kesari</h4>
+                            <span class="price">₹50</span>
+                        </div>
+                        <p>Saffron-flavored semolina pudding</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Kesari" data-price="50">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🍮</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Payasam</h4>
+                            <span class="price">₹60</span>
+                        </div>
+                        <p>Traditional rice pudding with nuts</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Payasam" data-price="60">Add +</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <div class="placeholder-food">🥮</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <h4>Gulab Jamun (2 pcs)</h4>
+                            <span class="price">₹45</span>
+                        </div>
+                        <p>Soft milk dumplings in sugar syrup</p>
+                        <div class="item-footer">
+                            <span class="veg-indicator"><i class="fas fa-circle"></i> Pure Veg</span>
+                            <button class="add-to-cart" data-name="Gulab Jamun (2 pcs)" data-price="45">Add +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today's Special -->
+    <section class="specials" id="specials">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Limited Time</span>
+                <h2 class="section-title">Today's Special Offers</h2>
+            </div>
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="special-badge">20% OFF</div>
+                    <div class="special-icon">🌅</div>
+                    <h3>Morning Breakfast Combo</h3>
+                    <p>2 Idli + 1 Vada + Filter Coffee</p>
+                    <div class="special-price">
+                        <span class="old-price">₹120</span>
+                        <span class="new-price">₹96</span>
+                    </div>
+                    <span class="timing">Available: 7 AM - 11 AM</span>
+                </div>
+
+                <div class="special-card featured">
+                    <div class="special-badge">BEST VALUE</div>
+                    <div class="special-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family Feast</h3>
+                    <p>4 Masala Dosas + 4 Filter Coffees + 2 Kesari</p>
+                    <div class="special-price">
+                        <span class="old-price">₹540</span>
+                        <span class="new-price">₹399</span>
+                    </div>
+                    <span class="timing">Available: All Day</span>
+                </div>
+
+                <div class="special-card">
+                    <div class="special-badge">NEW</div>
+                    <div class="special-icon">🌙</div>
+                    <h3>Dinner Special</h3>
+                    <p>Paper Dosa + Onion Uttapam + Masala Chaas</p>
+                    <div class="special-price">
+                        <span class="old-price">₹175</span>
+                        <span class="new-price">₹149</span>
+                    </div>
+                    <span class="timing">Available: 7 PM - 10 PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Feast</span>
+                <h2 class="section-title">Our Gallery</h2>
+                <p class="section-subtitle">A glimpse into our culinary world</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-utensils"></i>
+                        <span>Our Signature Dosa</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-fire"></i>
+                        <span>Live Kitchen</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-seedling"></i>
+                        <span>Fresh Ingredients</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-coffee"></i>
+                        <span>Filter Coffee</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-chair"></i>
+                        <span>Cozy Ambiance</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-users"></i>
+                        <span>Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The best dosa I've ever had outside of Chennai! The masala dosa is perfectly crispy and the potato filling is absolutely divine. Pappa Ji knows his craft!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">RS</div>
+                        <div class="reviewer-info">
+                            <h5>Rajesh Sharma</h5>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"We come here every Sunday as a family tradition. The filter coffee is unmatched, and the kids love the cheese dosa. Truly a gem!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">PM</div>
+                        <div class="reviewer-info">
+                            <h5>Priya Menon</h5>
+                            <span>Regular Customer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Authentic taste that reminds me of my grandmother's cooking. The sambar is perfectly spiced and the chutneys are fresh daily. Highly recommend!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">AK</div>
+                        <div class="reviewer-info">
+                            <h5>Amit Kumar</h5>
+                            <span>Food Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-stats">
+                <div class="review-stat">
+                    <span class="number">4.8</span>
+                    <div class="mini-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="label">Google Rating</span>
+                </div>
+                <div class="review-stat">
+                    <span class="number">2,500+</span>
+                    <span class="label">Happy Reviews</span>
+                </div>
+                <div class="review-stat">
+                    <span class="number">98%</span>
+                    <span class="label">Recommend Us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order & Reservation Section -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="order-container">
+                <!-- Online Order -->
+                <div class="order-box" id="online-order">
+                    <div class="order-header">
+                        <i class="fas fa-shopping-bag"></i>
+                        <h3>Order Online</h3>
+                    </div>
+                    <div class="cart-summary" id="cartSummary">
+                        <p class="empty-cart">Your cart is empty</p>
+                    </div>
+                    <div class="cart-total" id="cartTotal" style="display: none;">
+                        <span>Total:</span>
+                        <span id="totalAmount">₹0</span>
+                    </div>
+                    <form class="order-form" id="orderForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Delivery Address" required>
+                        <select required>
+                            <option value="">Select Delivery Time</option>
+                            <option value="asap">ASAP (30-45 mins)</option>
+                            <option value="1hour">In 1 Hour</option>
+                            <option value="2hour">In 2 Hours</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Place Order
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Table Reservation -->
+                <div class="order-box" id="reservation">
+                    <div class="order-header">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Reserve a Table</h3>
+                    </div>
+                    <form class="order-form" id="reservationForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="date" required>
+                        <select required>
+                            <option value="">Select Time</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                        </select>
+                        <select required>
+                            <option value="">Number of Guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6+ People</option>
+                        </select>
+                        <textarea placeholder="Special Requests (Optional)"></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-check-circle"></i> Confirm Reservation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>123, MG Road, Near City Center<br>Bangalore, Karnataka 560001</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Opening Hours</h4>
+                        <p>Monday - Sunday<br>7:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Phone</h4>
+                        <p>+91 98765 43210<br>+91 98765 43211</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>hello@pappajikadosa.com<br>orders@pappajikadosa.com</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Interactive Map</p>
+                        <span>Click to view on Google Maps</span>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span class="logo-text">Pappa Ji ka Dosa</span>
+                    </div>
+                    <p>Serving authentic South Indian cuisine with love since 1995. Every dosa is a masterpiece crafted with tradition.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Specialties</h4>
+                    <ul>
+                        <li><a href="#menu">Masala Dosa</a></li>
+                        <li><a href="#menu">Filter Coffee</a></li>
+                        <li><a href="#menu">Pappa Ji Special</a></li>
+                        <li><a href="#menu">Idli Sambar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pappa Ji ka Dosa. All rights reserved. | Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Cart Button -->
+    <div class="floating-cart" id="floatingCart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
